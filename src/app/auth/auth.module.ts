@@ -1,11 +1,21 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { AuthComponent } from './auth/auth.component';
+import { ModuleWithProviders, NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+
+import { AuthComponent } from './auth.component';
+import { NoAuthGuard } from './no-auth-guard.service';
+import { SharedModule } from '../shared';
+import { AuthRoutingModule } from './auth-routing.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    SharedModule,
+    AuthRoutingModule
   ],
-  declarations: [AuthComponent]
+  declarations: [
+    AuthComponent
+  ],
+  providers: [
+    NoAuthGuard
+  ]
 })
-export class AuthModule { }
+export class AuthModule {}

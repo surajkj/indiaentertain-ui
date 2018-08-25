@@ -1,11 +1,15 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { EditorComponent } from './editor/editor.component';
+import { ModuleWithProviders, NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+
+import { EditorComponent } from './editor.component';
+import { EditableArticleResolver } from './editable-article-resolver.service';
+import { AuthGuard } from '../core';
+import { SharedModule } from '../shared';
+import { EditorRoutingModule } from './editor-routing.module';
 
 @NgModule({
-  imports: [
-    CommonModule
-  ],
-  declarations: [EditorComponent]
+  imports: [SharedModule, EditorRoutingModule],
+  declarations: [EditorComponent],
+  providers: [EditableArticleResolver]
 })
-export class EditorModule { }
+export class EditorModule {}

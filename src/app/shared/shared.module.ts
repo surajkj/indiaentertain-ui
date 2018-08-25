@@ -1,17 +1,44 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ArticleListComponent } from './article-helpers/article-list/article-list.component';
-import { ArticleMetaComponent } from './article-helpers/article-meta/article-meta.component';
-import { ArticlePreviewComponent } from './article-helpers/article-preview/article-preview.component';
-import { FavoriteButtonComponent } from './buttons/favorite-button/favorite-button.component';
-import { FollowButtonComponent } from './buttons/follow-button/follow-button.component';
-import { FooterComponent } from './layout/footer/footer.component';
-import { HeaderComponent } from './layout/header/header.component';
+import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+
+import { ArticleListComponent, ArticleMetaComponent, ArticlePreviewComponent } from './article-helpers';
+import { FavoriteButtonComponent, FollowButtonComponent } from './buttons';
+import { ListErrorsComponent } from './list-errors.component';
+import { ShowAuthedDirective } from './show-authed.directive';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    RouterModule
   ],
-  declarations: [ArticleListComponent, ArticleMetaComponent, ArticlePreviewComponent, FavoriteButtonComponent, FollowButtonComponent, FooterComponent, HeaderComponent]
+  declarations: [
+    ArticleListComponent,
+    ArticleMetaComponent,
+    ArticlePreviewComponent,
+    FavoriteButtonComponent,
+    FollowButtonComponent,
+    ListErrorsComponent,
+    ShowAuthedDirective
+  ],
+  exports: [
+    ArticleListComponent,
+    ArticleMetaComponent,
+    ArticlePreviewComponent,
+    CommonModule,
+    FavoriteButtonComponent,
+    FollowButtonComponent,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    ListErrorsComponent,
+    RouterModule,
+    ShowAuthedDirective
+  ]
 })
-export class SharedModule { }
+export class SharedModule {}

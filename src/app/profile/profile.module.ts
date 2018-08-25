@@ -1,13 +1,25 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ProfileArticlesComponent } from './profile-articles/profile-articles.component';
-import { ProfileFavoritesComponent } from './profile-favorites/profile-favorites.component';
-import { ProfileComponent } from './profile/profile.component';
+import { ModuleWithProviders, NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
+
+import { ProfileArticlesComponent } from './profile-articles.component';
+import { ProfileComponent } from './profile.component';
+import { ProfileFavoritesComponent } from './profile-favorites.component';
+import { ProfileResolver } from './profile-resolver.service';
+import { SharedModule } from '../shared';
+import { ProfileRoutingModule } from './profile-routing.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    SharedModule,
+    ProfileRoutingModule
   ],
-  declarations: [ProfileArticlesComponent, ProfileFavoritesComponent, ProfileComponent]
+  declarations: [
+    ProfileArticlesComponent,
+    ProfileComponent,
+    ProfileFavoritesComponent
+  ],
+  providers: [
+    ProfileResolver
+  ]
 })
-export class ProfileModule { }
+export class ProfileModule {}

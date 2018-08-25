@@ -5,6 +5,8 @@ import { HomeComponent } from './home.component';
 import { HomeAuthResolver } from './home-auth-resolver.service';
 import { SharedModule } from '../shared';
 import { HomeRoutingModule } from './home-routing.module';
+import { FeaturedComponent } from './featured/featured.component';
+import { AllStoryComponent } from './all-story/all-story.component';
 
 @NgModule({
   imports: [
@@ -12,7 +14,9 @@ import { HomeRoutingModule } from './home-routing.module';
     HomeRoutingModule
   ],
   declarations: [
-    HomeComponent
+    HomeComponent,
+    FeaturedComponent,
+    AllStoryComponent
   ],
   providers: [
     HomeAuthResolver

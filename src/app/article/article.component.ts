@@ -32,26 +32,27 @@ export class ArticleComponent implements OnInit {
     private router: Router,
     private userService: UserService,
   ) { }
-
+  
   ngOnInit() {
+    // console.log('Hello From Atricle component');
     // Retreive the prefetched article
-    this.route.data.subscribe(
-      (data: { article: Article }) => {
-        this.article = data.article;
+    // this.route.data.subscribe(
+    //   (data: { article: Article }) => {
+    //     this.article = data.article;
 
-        // Load the comments on this article
-        this.populateComments();
-      }
-    );
+    //     // Load the comments on this article
+    //     this.populateComments();
+    //   }
+    // );
 
     // Load the current user's data
-    this.userService.currentUser.subscribe(
-      (userData: User) => {
-        this.currentUser = userData;
+    // this.userService.currentUser.subscribe(
+    //   (userData: User) => {
+    //     this.currentUser = userData;
 
-        this.canModify = (this.currentUser.username === this.article.author.username);
-      }
-    );
+    //     this.canModify = (this.currentUser.username === this.article.author.username);
+    //   }
+    // );
   }
 
   onToggleFavorite(favorited: boolean) {
@@ -84,33 +85,33 @@ export class ArticleComponent implements OnInit {
       .subscribe(comments => this.comments = comments);
   }
 
-  addComment() {
-    this.isSubmitting = true;
-    this.commentFormErrors = {};
+  // addComment() {
+  //   this.isSubmitting = true;
+  //   this.commentFormErrors = {};
 
-    const commentBody = this.commentControl.value;
-    this.commentsService
-      .add(this.article.slug, commentBody)
-      .subscribe(
-        comment => {
-          this.comments.unshift(comment);
-          this.commentControl.reset('');
-          this.isSubmitting = false;
-        },
-        errors => {
-          this.isSubmitting = false;
-          this.commentFormErrors = errors;
-        }
-      );
-  }
+  //   const commentBody = this.commentControl.value;
+  //   this.commentsService
+  //     .add(this.article.slug, commentBody)
+  //     .subscribe(
+  //       comment => {
+  //         this.comments.unshift(comment);
+  //         this.commentControl.reset('');
+  //         this.isSubmitting = false;
+  //       },
+  //       errors => {
+  //         this.isSubmitting = false;
+  //         this.commentFormErrors = errors;
+  //       }
+  //     );
+  // }
 
-  onDeleteComment(comment) {
-    this.commentsService.destroy(comment.id, this.article.slug)
-      .subscribe(
-        success => {
-          this.comments = this.comments.filter((item) => item !== comment);
-        }
-      );
-  }
+  // onDeleteComment(comment) {
+  //   this.commentsService.destroy(comment.id, this.article.slug)
+  //     .subscribe(
+  //       success => {
+  //         this.comments = this.comments.filter((item) => item !== comment);
+  //       }
+  //     );
+  // }
 
 }

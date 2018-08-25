@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ArticleComponent } from './article.component';
-import { ArticleResolver } from './article-resolver.service';
+// import { ArticleResolver } from './article-resolver.service';
 
 const routes: Routes = [
   {
-    path: ':slug',
+    path: '',
     component: ArticleComponent,
-    resolve: {
-      article: ArticleResolver
-    }
+    // resolve: {
+    //   article: ArticleResolver
+    // }
   }
 ];
 

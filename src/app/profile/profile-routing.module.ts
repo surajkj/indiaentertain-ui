@@ -8,21 +8,23 @@ import { ProfileComponent } from './profile.component';
 
 const routes: Routes = [
   {
-    path: ':username',
-    component: ProfileComponent,
-    resolve: {
-      profile: ProfileResolver
-    },
-    children: [
-      {
-        path: '',
-        component: ProfileArticlesComponent
-      },
-      {
-        path: 'favorites',
-        component: ProfileFavoritesComponent
-      }
-    ]
+    path: '',
+    component: ProfileComponent
+    // path: ':username',
+    // component: ProfileComponent,
+    // resolve: {
+    //   profile: ProfileResolver
+    // },
+    // children: [
+    //   {
+    //     path: '',
+    //     component: ProfileArticlesComponent
+    //   },
+    //   {
+    //     path: 'favorites',
+    //     component: ProfileFavoritesComponent
+    //   }
+//     ]
   }
 ];
 

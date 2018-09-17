@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title }     from '@angular/platform-browser';
 
 import { UserService } from './core';
 
@@ -8,10 +9,13 @@ import { UserService } from './core';
 })
 export class AppComponent implements OnInit {
   constructor (
-    private userService: UserService
+    private userService: UserService,private titleService: Title
   ) {}
 
   ngOnInit() {
     this.userService.populate();
+  }
+  public setTitle( newTitle: string) {
+    this.titleService.setTitle( newTitle );
   }
 }

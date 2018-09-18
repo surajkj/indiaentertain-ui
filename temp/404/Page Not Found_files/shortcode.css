@@ -1,0 +1,256 @@
+
+.callout .column { padding: 0 15px; }
+@media (max-width: 767px) {
+    .callout .column { margin-top: 15px; }
+    .callout .column:first-child { margin-top: 0; }
+}
+.callout h2 { font-size:18px; line-height: normal; font-weight: normal; color: #777777; margin-top: 0; }
+.callout p, .callout li { font-size:12px; line-height: 15px; color: #999; margin-top: 14px; }
+.callout a { font-size:10px; }
+.callout a:hover, .title-bottom .callout a:hover { text-decoration:underline; }
+.callout li a { font-size: 12px; }
+
+ul.latestpost { list-style: none; margin-left: 0; }
+ul.latestpost li a { color: #999; }
+
+.pageboxes .pagebox { margin-bottom: 10px; }
+.pageboxes .pagebox a.title {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3371A5;
+    padding: 10px 0;
+    text-align: center;
+}
+.pageboxes .pagebox a.title:hover { color: #3371A5; }
+.pageboxes .pagebox p { text-align: center; }
+.pageboxes .pagebox a.icon {
+    display: block;
+    width: 102px;
+    height: 114px;
+    margin: 0 auto;
+    background-image: url(/web/20140214103819im_/http://www.emailcenteruk.com/wp-content/themes/emailcenter-joecorp/images/icon/pagebox_bg.png);
+}
+.pageboxes .pagebox a.icon img {
+    display: inline-block;
+    width: 88px;
+    height: 98px;
+    background-image: url(/web/20140214103819im_/http://www.emailcenteruk.com/wp-content/themes/emailcenter-joecorp/images/icon/pagebox.png);
+    position: relative;
+    top: 8px;
+    left: 7px;
+}
+.pageboxes .pagebox a.icon img.wand          { background-position: 0 0; }
+.pageboxes .pagebox a.icon img.wand:hover    { background-position: -88px 0; }
+.pageboxes .pagebox a.icon img.plane         { background-position: 0 -98px; }
+.pageboxes .pagebox a.icon img.plane:hover   { background-position: -88px -98px; }
+.pageboxes .pagebox a.icon img.light         { background-position: 0 -196px; }
+.pageboxes .pagebox a.icon img.light:hover   { background-position: -88px -196px; }
+.pageboxes .pagebox a.icon img.headset       { background-position: 0 -294px; }
+.pageboxes .pagebox a.icon img.headset:hover { background-position: -88px -294px; }
+.pageboxes .pagebox a.icon img.pencil        { background-position: 0 -392px; }
+.pageboxes .pagebox a.icon img.pencil:hover  { background-position: -88px -392px; }
+.pageboxes .pagebox a.icon img.tool          { background-position: 0 -490px; }
+.pageboxes .pagebox a.icon img.tool:hover    { background-position: -88px -490px; }
+.pageboxes .pagebox a.icon img.blog          { background-position: 0 -588px; }
+.pageboxes .pagebox a.icon img.blog:hover    { background-position: -88px -588px; }
+.pageboxes .pagebox a.icon img.read          { background-position: 0 -686px; }
+.pageboxes .pagebox a.icon img.read:hover    { background-position: -88px -686px; }
+.pageboxes .pagebox a.icon img.note          { background-position: 0 -784px; }
+.pageboxes .pagebox a.icon img.note:hover    { background-position: -88px -784px; }
+.pageboxes .pagebox a.icon img.speech        { background-position: 0 -882px; }
+.pageboxes .pagebox a.icon img.speech:hover  { background-position: -88px -882px; }
+.pageboxes .pagebox a.icon img.head          { background-position: 0 -980px; }
+.pageboxes .pagebox a.icon img.head:hover    { background-position: -88px -980px; }
+.pageboxes .pagebox a.icon img.medal         { background-position: 0 -1078px; }
+.pageboxes .pagebox a.icon img.medal:hover   { background-position: -88px -1078px; }
+.pageboxes .pagebox a.icon img.lock          { background-position: 0 -1176px; }
+.pageboxes .pagebox a.icon img.lock:hover    { background-position: -88px -1176px; }
+.pageboxes .pagebox a.icon img.chart         { background-position: 0 -1274px; }
+.pageboxes .pagebox a.icon img.chart:hover   { background-position: -88px -1274px; }
+.pageboxes .pagebox a.icon img.email         { background-position: 0 -1372px; }
+.pageboxes .pagebox a.icon img.email:hover   { background-position: -88px -1372px; }
+.pageboxes .pagebox a.icon img.tick          { background-position: 0 -1470px; }
+.pageboxes .pagebox a.icon img.tick:hover    { background-position: -88px -1470px; }
+.pageboxes .pagebox a.icon img.target        { background-position: 0 -1568px; }
+.pageboxes .pagebox a.icon img.target:hover  { background-position: -88px -1568px; }
+.pageboxes .pagebox a.icon img.rotate        { background-position: 0 -1666px; }
+.pageboxes .pagebox a.icon img.rotate:hover  { background-position: -88px -1666px; }
+.pageboxes .pagebox a.icon img.inbox         { background-position: 0 -1764px; }
+.pageboxes .pagebox a.icon img.inbox:hover   { background-position: -88px -1764px; }
+.pageboxes .pagebox a.icon img.mic           { background-position: 0 -1862px; }
+.pageboxes .pagebox a.icon img.mic:hover     { background-position: -88px -1862px; }
+.pageboxes .pagebox a.icon img.atom          { background-position: 0 -1960px; }
+.pageboxes .pagebox a.icon img.atom:hover    { background-position: -88px -1960px; }
+.pageboxes .pagebox a.icon img.logoplus      { background-position: 0 -2058px; }
+.pageboxes .pagebox a.icon img.logoplus:hover { background-position: -88px -2058px; }
+.pageboxes .pagebox a.icon img.talk          { background-position: 0 -2156px; }
+.pageboxes .pagebox a.icon img.talk:hover    { background-position: -88px -2156px; }
+.pageboxes .pagebox a.icon img.tag           { background-position: 0 -2254px; }
+.pageboxes .pagebox a.icon img.tag:hover     { background-position: -88px -2254px; }
+.pageboxes .pagebox a.icon img.deskcode       { background-position: 0 -2352px; }
+.pageboxes .pagebox a.icon img.deskcode:hover { background-position: -88px -2352px; }
+.pageboxes .pagebox a.icon img.deskart        { background-position: 0 -2450px; }
+.pageboxes .pagebox a.icon img.deskart:hover  { background-position: -88px -2450px; }
+.pageboxes .pagebox a.icon img.mobcode        { background-position: 0 -2548px; }
+.pageboxes .pagebox a.icon img.mobcode:hover  { background-position: -88px -2548px; }
+.pageboxes .pagebox a.icon img.emailclock       { background-position: 0 -2646px; }
+.pageboxes .pagebox a.icon img.emailclock:hover { background-position: -88px -2646px; }
+.pageboxes .pagebox a.icon img.checks          { background-position: 0 -2744px; }
+.pageboxes .pagebox a.icon img.checks:hover    { background-position: -88px -2744px; }
+.pageboxes .pagebox a.icon img.emailhead       { background-position: 0 -2842px; }
+.pageboxes .pagebox a.icon img.emailhead:hover { background-position: -88px -2842px; }
+
+.iconboxes .iconbox { margin-bottom: 10px; }
+.iconboxes .iconbox a.title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #3371A5;
+    padding: 10px 0;
+}
+.iconboxes .iconbox a.title:hover { color: #3371A5; }
+.iconboxes .iconbox p { }
+.iconboxes .iconbox a.icon {
+    width: 48px;
+    height: 54px;
+    background-image: url(/web/20140214103819im_/http://www.emailcenteruk.com/wp-content/themes/emailcenter-joecorp/images/icon/iconbox_bg.png);
+}
+.iconboxes .iconbox a.icon img {
+    width: 42px;
+    height: 46px;
+    background-image: url(/web/20140214103819im_/http://www.emailcenteruk.com/wp-content/themes/emailcenter-joecorp/images/icon/iconbox.png);
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+.iconboxes .iconbox a.icon img.tag             { background-position: 0 0px; }
+.iconboxes .iconbox a.icon img.tag:hover       { background-position: -42px 0px; }
+.iconboxes .iconbox a.icon img.pointer         { background-position: 0 -47px; }
+.iconboxes .iconbox a.icon img.pointer:hover   { background-position: -42px -47px; }
+.iconboxes .iconbox a.icon img.head            { background-position: 0 -94px; }
+.iconboxes .iconbox a.icon img.head:hover      { background-position: -42px -94px; }
+.iconboxes .iconbox a.icon img.tick            { background-position: 0 -141px; }
+.iconboxes .iconbox a.icon img.tick:hover      { background-position: -42px -141px; }
+.iconboxes .iconbox a.icon img.logo            { background-position: 0 -188px; }
+.iconboxes .iconbox a.icon img.logo:hover      { background-position: -42px -188px; }
+.iconboxes .iconbox a.icon img.pound           { background-position: 0 -235px; }
+.iconboxes .iconbox a.icon img.pound:hover     { background-position: -42px -235px; }
+.iconboxes .iconbox a.icon img.headset         { background-position: 0 -282px; }
+.iconboxes .iconbox a.icon img.headset:hover   { background-position: -42px -282px; }
+.iconboxes .iconbox a.icon img.lightning       { background-position: 0 -329px; }
+.iconboxes .iconbox a.icon img.lightning:hover { background-position: -42px -329px; }
+
+.clientlogo { padding-top: 30px; }
+.clientlogo .thumbnails,
+.clientlogo .thumbnails li { margin-bottom: 0; }
+.clientlogo .thumbnail {
+    border: none;
+    padding: 0;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+.clientlogo a.thumbnail:hover,
+.clientlogo a.thumbnail:focus {
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+/* Override the bootstrap slider defaults */
+.carousel { margin-bottom:0; }
+.carousel-indicators {
+    top: auto;
+    bottom: 10px;
+    right: auto;
+    width: 100%;
+    text-align: center;
+}
+.carousel-indicators li {
+    display: inline-block;
+    float: none;
+    margin-right: 5px;
+    background-color: #FFF;
+    opacity: 0.4;
+}
+.carousel-indicators li.active {
+    background-color: #fff;
+    opacity: 1;
+}
+
+/* Our own slider item styles */
+.carousel div.item div.img { height: 418px; background-position:center; background-repeat: no-repeat; background-size:cover; -webkit-background-size:cover; -moz-background-size:cover; -ms-background-size:cover; -o-background-size:cover; }
+.carousel div.item .container { position: relative; height: 418px;}
+.carousel div.item .heading { width: 497px; height: 222px; margin-top: 35px; margin-left: 21px;}
+.carousel div.item .heading>.inner {
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(0, 0, 0) transparent;
+    /* RGBa with 0.6 opacity */
+    background: rgba(0, 0, 0, 0.6);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+.carousel div.item .heading>.inner { padding: 18px 27px; height:186px; position:relative; }
+.carousel div.item .heading h1 { font-size:35px; line-height: 42px; font-weight: normal; color:#fff; }
+.carousel div.item .heading p { font-size: 20px; line-height: 24px; color:#fff; margin-top: 20px; }
+.carousel div.item .btn { position:absolute; bottom: 18px; right: 27px; width: 136px; overflow: hidden; }
+.carousel div.item img.extra { position:absolute; width:auto; }
+/* Tablet */
+@media (min-width: 768px) and (max-width: 979px) {
+    .carousel div.item div.img { height: 320px; }
+}
+/* Full width container, landscape phone */
+@media (max-width: 767px) {
+    .carousel div.item div.img { height: 300px; }
+    .carousel div.item .heading { width:100%; margin-left: 0; margin-right: 0; height: auto; }
+    .carousel div.item .heading>.inner { height: auto; }
+    .carousel div.item .heading p { margin-bottom: 48px; }
+}
+/* Portrait phone */
+@media (max-width: 479px) {
+    .carousel div.item div.img { height: 380px; }
+}
+
+.portfolio .filter a { cursor: pointer; }
+.portfolio .mix { opacity: 0; display: none; }
+.portfolio ul.items { margin-left: 0;}
+.portfolio ul.items li { margin-bottom: 32px; }
+@media (max-width: 979px) {
+    .portfolio ul.items li { margin-bottom: 10px; }
+}
+.portfolio ul.items li a.img,
+.portfolio ul.items li span.img { display: block; }
+.portfolio ul.items li a.img img,
+.portfolio ul.items li span.img img { display: block; margin: 0 auto; }
+.portfolio ul.items li a.img:hover img { opacity: 0.8; }
+.portfolio ul.items li a.title,
+.portfolio ul.items li span.title { display: block; font-size: 14px; font-weight: bold; color: #3371A5; padding: 10px 0; text-align: center; }
+.portfolio ul.items li a.title:hover { color: #3371A5; }
+.portfolio ul.items li p { text-align: center; }
+
+/*
+     FILE ARCHIVED ON 10:38:19 Feb 14, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:08:37 Sep 18, 2018.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 39.913 (3)
+  esindex: 0.01
+  captures_list: 55.179
+  CDXLines.iter: 11.147 (3)
+  PetaboxLoader3.datanode: 111.364 (5)
+  exclusion.robots: 0.272
+  exclusion.robots.policy: 0.255
+  RedisCDXSource: 0.691
+  PetaboxLoader3.resolve: 69.368 (2)
+  load_resource: 211.091
+*/

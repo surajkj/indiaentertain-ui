@@ -1,21 +1,29 @@
-import { ModuleWithProviders, NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AuthComponent } from './auth.component';
-import { NoAuthGuard } from './no-auth-guard.service';
 import { SharedModule } from '../shared';
 import { AuthRoutingModule } from './auth-routing.module';
-
+import { NoAuthGuard } from './no-auth-guard.service';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+ 
 @NgModule({
   imports: [
     SharedModule,
-    AuthRoutingModule
+    AuthRoutingModule,
+    BrowserModule,
+    ReactiveFormsModule
   ],
   declarations: [
-    AuthComponent
+    AuthComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   providers: [
     NoAuthGuard
-  ]
+  ],
+  bootstrap: [AuthComponent]
 })
-export class AuthModule {}
+ 
+export class AuthModule { }

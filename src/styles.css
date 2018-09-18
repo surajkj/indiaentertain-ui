@@ -147,7 +147,6 @@ span.post-date,span.post-read {
 span.post-read-more {
 	align-items:center;
 	display:inline-block;
-	float:right;
 	margin-top:8px;
 }
 span.post-read-more a {

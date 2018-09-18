@@ -1,0 +1,78 @@
+
+jQuery(document).ready(function() {
+    // Scroll the window to remove the address bar on mobile
+    // document.ready rather than window.load, as it was happening too late
+    // on desktop devices
+    window.scrollTo(0, 1);
+});
+
+jQuery(document).ready(function($) {
+
+    // A tags with class 'nolink' will allow javascript listeners to
+    // function, but the browser won't respond to the click
+    $('a.nolink').click(function(e){ e.preventDefault(); });
+
+    // Run mathiasbynens/jquery-placeholder
+    $('input, textarea').placeholder();
+
+    var footer = $('#footer'),
+        positionFooter = function() {
+            var bodyHeight = $('body').height();
+            if (footer.css('position') === 'absolute') {
+                bodyHeight += footer.height();
+            }
+            if (bodyHeight >= $(window).height()) {
+                // Content is longer than page, normal footer
+                footer.css({
+                    position : 'static',
+                    bottom : 'auto',
+                    left : 'auto',
+                    right : 'auto'
+                });
+            } else {
+                // Content is shorter than page, fixed footer
+                footer.css({
+                    position : 'absolute',
+                    bottom : 0,
+                    left : 0,
+                    right : 0
+                });
+            }
+        };
+
+    var resizeTimeoutId;
+    $(window).resize(function() {
+        if (resizeTimeoutId) {
+            clearTimeout(resizeTimeoutId);
+        }
+        resizeTimeoutId = setTimeout(positionFooter, 20);
+    });
+
+    // first position with a little delay,
+    // makes sure that other onReady (like the mixer)
+    // have enough time to add content to the page
+    setTimeout(positionFooter, 20);
+
+});
+
+/*
+     FILE ARCHIVED ON 08:21:32 Feb 14, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:08:38 Sep 18, 2018.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 72.338 (3)
+  esindex: 0.006
+  captures_list: 91.104
+  CDXLines.iter: 12.576 (3)
+  PetaboxLoader3.datanode: 110.626 (5)
+  exclusion.robots: 0.256
+  exclusion.robots.policy: 0.24
+  RedisCDXSource: 2.466
+  PetaboxLoader3.resolve: 103.659 (2)
+  load_resource: 198.909
+*/

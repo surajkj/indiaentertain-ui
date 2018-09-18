@@ -1,0 +1,31 @@
+.entry-content .addthis_toolbox, .entry-content .addthis_button, .entry-header .addthis_toolbox, .entry-header .addthis_button {
+	margin:10px 0 10px 0;
+}
+.addthis_button_tweet {
+	min-width: 83px;
+	float:left;
+}
+.atwidget iframe {
+	max-width:none;
+}
+/*
+     FILE ARCHIVED ON 09:43:38 Feb 14, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:08:37 Sep 18, 2018.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 36.344 (3)
+  esindex: 0.01
+  captures_list: 49.941
+  CDXLines.iter: 9.239 (3)
+  PetaboxLoader3.datanode: 85.126 (5)
+  exclusion.robots: 0.22
+  exclusion.robots.policy: 0.205
+  RedisCDXSource: 1.189
+  PetaboxLoader3.resolve: 758.744 (2)
+  load_resource: 872.551
+*/

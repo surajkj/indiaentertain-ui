@@ -1,0 +1,124 @@
+
+.row-fluid [class*="span"].first { margin-left: 0; }
+
+[class*="span"].media { margin-top: 15px; }
+
+/* .no-responsive : stop layout shuffle on mobile */
+@media (max-width: 767px) {
+    /* Reset fluid style to min-width:768px values */
+    .row-fluid.no-responsive [class*="span"] {
+        float: left;
+        margin-left: 2.7624309392265194%;
+        *margin-left: 2.709239449864817%;
+    }
+    .row-fluid.no-responsive [class*="span"]:first-child {
+        margin-left: 0;
+    }
+    .row-fluid.no-responsive .span12 {
+        width: 100%;
+        *width: 99.94680851063829%;
+    }
+    .row-fluid.no-responsive .span11 {
+        width: 91.43646408839778%;
+        *width: 91.38327259903608%;
+    }
+    .row-fluid.no-responsive .span10 {
+        width: 82.87292817679558%;
+        *width: 82.81973668743387%;
+    }
+    .row-fluid.no-responsive .span9 {
+        width: 74.30939226519337%;
+        *width: 74.25620077583166%;
+    }
+    .row-fluid.no-responsive .span8 {
+        width: 65.74585635359117%;
+        *width: 65.69266486422946%;
+    }
+    .row-fluid.no-responsive .span7 {
+        width: 57.18232044198895%;
+        *width: 57.12912895262725%;
+    }
+    .row-fluid.no-responsive .span6 {
+        width: 48.61878453038674%;
+        *width: 48.56559304102504%;
+    }
+    .row-fluid.no-responsive .span5 {
+        width: 40.05524861878453%;
+        *width: 40.00205712942283%;
+    }
+    .row-fluid.no-responsive .span4 {
+        width: 31.491712707182323%;
+        *width: 31.43852121782062%;
+    }
+    .row-fluid.no-responsive .span3 {
+        width: 22.92817679558011%;
+        *width: 22.87498530621841%;
+    }
+    .row-fluid.no-responsive .span2 {
+        width: 14.3646408839779%;
+        *width: 14.311449394616199%;
+    }
+    .row-fluid.no-responsive .span1 {
+        width: 5.801104972375691%;
+        *width: 5.747913483013988%;
+    }
+    .row-fluid.no-responsive .offset1:first-child {
+        margin-left: 8.56353591160221%;
+        *margin-left: 8.457152932878806%;
+    }
+}
+
+/* .overflow : add many span children to overflow to new rows */
+.row-fluid.overflow .span6 {
+    margin-left: 1.063829787%;  /* (100-(48.93617021276595*2))/2 */
+    *margin-left: 1.1170212765%;  /* (100-(48.88297872340425*2))/2 */
+}
+.row-fluid.overflow .span3 {
+    margin-left: 1.5957446808%; /* (100-(23.404255319148934*4))/4 */
+    *margin-left: 1.6489361703%; /* (100-(23.351063829787233*4))/4 */
+}
+@media (min-width: 1200px) {
+    .row-fluid.overflow .span6 {
+        margin-left: 1.282051282%;  /* (100-(48.717948717948715*2))/2 */
+        *margin-left: 1.3352427715%;  /* (100-(48.664757228587014*2))/2 */
+    }
+    .row-fluid.overflow .span3 {
+        margin-left: 1.923076923%;  /* (100-(23.076923076923077*4))/4 */
+        *margin-left: 1.9762684125%;  /* (100-(23.023731587561375*4))/4 */
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .row-fluid.overflow .span6 {
+        margin-left: 1.3812154695%;  /* (100-(48.61878453038674*2))/2 */
+        *margin-left: 1.434406959%;  /* (100-(48.56559304102504*2))/2 */
+    }
+    .row-fluid.overflow .span3 {
+        margin-left: 2.0718232045%;  /* (100-(22.92817679558011*4))/4 */
+        *margin-left: 2.1250146938%;  /* (100-(22.87498530621841*4))/4 */
+    }
+}
+@media (max-width: 767px) {
+    .row-fluid.overflow [class*="span"] { margin-left: 0; }
+}
+
+/*
+     FILE ARCHIVED ON 09:01:43 Feb 14, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:08:37 Sep 18, 2018.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 57.668 (3)
+  esindex: 0.007
+  captures_list: 73.281
+  CDXLines.iter: 10.046 (3)
+  PetaboxLoader3.datanode: 335.771 (5)
+  exclusion.robots: 0.196
+  exclusion.robots.policy: 0.185
+  RedisCDXSource: 3.058
+  PetaboxLoader3.resolve: 132.358 (2)
+  load_resource: 474.113
+*/

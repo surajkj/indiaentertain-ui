@@ -3,10 +3,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
  
 @Component({
     selector: 'app',
-    templateUrl: 'auth.component.html'
+    templateUrl: 'register.component.html'
 })
  
-export class AuthComponent implements OnInit {
+export class RegisterComponent implements OnInit {
     registerForm: FormGroup;
     submitted = false;
  

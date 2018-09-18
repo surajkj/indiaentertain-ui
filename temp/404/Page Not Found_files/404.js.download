@@ -1,0 +1,63 @@
+
+jQuery(document).ready(function($) {
+
+    var fire = $('body.error404 div.fire');
+    var btn = $('body.error404 div.fire .btns a.btn');
+
+    btn.click(function(e) {
+        var employee = $(this),
+            name = employee.attr('class').split(/\s/).pop();
+
+        // Tell GA
+        if (typeof(_gaq) === "function") {
+            // Classic
+            _gaq.push(['_trackEvent', '404', 'fire', name]);
+        }
+        if (typeof(__gaTracker) === "function") {
+            // Universal, custom GA name via Yoast GA plugin
+            __gaTracker('send', {
+                hitType: 'event',
+                eventCategory: '404',
+                eventAction: 'fire',
+                eventLabel: name
+            });
+        }
+
+        // Add 'fired' or 'saved' classes
+        fire.addClass('fired');
+        fire.addClass(name);
+
+        // Remove this click handler
+        btn.off('click');
+
+        // Disable the links
+        btn.on('click', function() {
+            return false;
+        });
+
+        return false;
+    });
+
+});
+
+/*
+     FILE ARCHIVED ON 08:14:08 May 31, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:08:39 Sep 18, 2018.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  LoadShardBlock: 118.129 (3)
+  esindex: 0.006
+  captures_list: 133.248
+  CDXLines.iter: 10.532 (3)
+  PetaboxLoader3.datanode: 38.755 (4)
+  exclusion.robots: 0.177
+  exclusion.robots.policy: 0.168
+  RedisCDXSource: 1.853
+  PetaboxLoader3.resolve: 101.534 (3)
+  load_resource: 46.247
+*/

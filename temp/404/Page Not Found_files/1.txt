@@ -1,0 +1,14 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 11:08:49 Sep 18, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:08:49 Sep 18, 2018.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+_ate.track.hsr({"loc":"OTQxMThOQVVTQ0EyMTc4MDU3NTgwNzAwMDBDSA==","pc":"wpp,shin","tool-config":{"_default":{"widgets":{"rabf":{"hideEmailSharingConfirmation":false,"buttonColor":"#666666","counts":"one","shareCountThreshold":10,"originalServices":"facebook_like,tweet,pinterest_pinit,google_plusone,counter","titleFontSize":"18px","creationTimestamp":1479920165590,"counterColor":"#666666","id":"shin","hideLabel":true,"toolName":"Inline","countsFontSize":"60px","widgetId":"rabf","services":"twitter,facebook,linkedin,google_plusone_share,email,addthis","label":"SHARES","__hideOnHomepage":false,"numPreferredServices":3,"borderRadius":"4px","size":"20px","elements":".addthis_inline_share_toolbox","responsive":"979px","iconColor":"#FFFFFF","hideDevice":"none","style":"responsive"}}}},"subscription":{"active":true,"edition":"BASIC","tier":"basic","reducedBranding":false,"insightsEnabled":false},"customMessageTemplates":[],"pro-config":{"_default":{"widgets":{"shin":{"hideEmailSharingConfirmation":false,"buttonColor":"#666666","counts":"one","shareCountThreshold":10,"originalServices":"facebook_like,tweet,pinterest_pinit,google_plusone,counter","titleFontSize":"18px","creationTimestamp":1479920165590,"counterColor":"#666666","id":"shin","hideLabel":true,"toolName":"Inline","countsFontSize":"60px","widgetId":"rabf","services":"twitter,facebook,linkedin,google_plusone_share,email,addthis","label":"SHARES","__hideOnHomepage":false,"numPreferredServices":3,"borderRadius":"4px","size":"20px","elements":".addthis_inline_share_toolbox","responsive":"979px","iconColor":"#FFFFFF","hideDevice":"none","style":"responsive"}}}}});

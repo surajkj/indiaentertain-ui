@@ -70,9 +70,9 @@
     margin-left: 135px;
 }
 .arrow.luker-arrow { left: 183px; bottom: 6px; width: 192px; height: 87px; background-position: 0px 0px; }
-.arrow.james-arrow { left: 382px; width: 56px; height: 56px; background-position: -250px -41px;}
-.arrow.martin-arrow {right: 128px; bottom: 10px; width: 232px; height: 85px; background-position: -504px 0px;  }
-.arrow.chris-arrow { left: 522px; width: 82px; height: 58px; background-position: -409px -41px; }
+.arrow.james-arrow { margin-left: 366px;left: 382px; width: 56px; height: 56px; background-position: -250px -41px;}
+.arrow.martin-arrow { margin-left: 545px;left: 522px; width: 82px; height: 58px; background-position: -409px -41px; }
+.arrow.chris-arrow { margin-left: 640px;right: 128px; bottom: 10px; width: 232px; height: 85px; background-position: -504px 0px;  }
 
 
 

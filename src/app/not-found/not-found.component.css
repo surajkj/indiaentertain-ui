@@ -1,63 +1,78 @@
-/* .fire .initial, body.error404 .fire .return {
-    text-align: center;
+.initial { 
+    text-align: center; 
 }
 
-body.error404 .fire h2 {
-    color: #000000;
-    text-transform: uppercase;
+.staff-image {  
+    background-image: url('/assets/img/staff.jpg'); 
+    width: 980px; 
+    height: 302px; 
+    background-position: 0 0; 
+} 
+
+.staff-image.fire-luker{
+    background-position: 0 -302px;
+}
+.staff-image.fire-james{
+    background-position: 0 -604px;
+}
+.staff-image.fire-martin{
+    background-position: 0 -906px;
+}
+.staff-image.fire-chris{
+    background-position: 0 -1208px;
+}
+.staff-button {
+    min-width: 130px;
+    color: #fff;
+    line-height: 22px;
+    text-shadow: none;
+    border: 0;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: #3E87DF;
+    background: -moz-linear-gradient(top, #3E87DF 0%, #2271D0 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3E87DF), color-stop(100%,#2271D0));
+    background: -webkit-linear-gradient(top, #3E87DF 0%,#2271D0 100%);
+    background: -o-linear-gradient(top, #3E87DF 0%,#2271D0 100%);
+    background: -ms-linear-gradient(top, #3E87DF 0%,#2271D0 100%);
+    background: linear-gradient(to bottom, #3E87DF 0%,#2271D0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E87DF', endColorstr='#2271D0',GradientType=0 );
+    margin-right: 145px;
+    margin-bottom: 15px;
 }
 
-h2, h2 a, h2 a:hover {
-    font-size: 17px;
+.initial-text {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.lead {
+    font-size: 23px;
+    line-height: 10px;
+    color: #000;
 }
 
-h1, h2, h3 {
-    line-height: 40px;
-}
-
-body.error404 .fire .arrow {
-    height: 50px;
+.message {
+    font-size: 18px;
+    color: #777777;
+    margin-top: 25px;
 }
 
 .arrow {
-    align-self: center;
-}
-
-body.error404 .fire .arrow {
-    position: relative;
-}
-
-
-div {
-    display: block;
-}
-
-.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    background-image: url(/assets/img/arrow.png);
     width: 980px;
+    height: 106px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin-left: 135px;
 }
-
-.container {
-    margin-right: auto;
-    margin-left: auto;
-    *zoom: 1;
-}
-
-.arrow-poisition {
-    position: unset;
-    padding-left: 125px;
-} */
+.arrow.luker-arrow { left: 183px; bottom: 6px; width: 192px; height: 87px; background-position: 0px 0px; }
+.arrow.james-arrow { left: 382px; width: 56px; height: 56px; background-position: -250px -41px;}
+.arrow.martin-arrow {right: 128px; bottom: 10px; width: 232px; height: 85px; background-position: -504px 0px;  }
+.arrow.chris-arrow { left: 522px; width: 82px; height: 58px; background-position: -409px -41px; }
 
 
 
-body {
-    margin-top:0 !important;
-    padding-top:0 !important;
-    /*min-width:800px !important;*/
-  }
-  .wb-autocomplete-suggestions {
-      text-align: left; cursor: default; border: 1px solid #ccc; border-top: 0; background: #fff; box-shadow: -1px 1px 3px rgba(0,0,0,.1);
-      position: absolute; display: none; z-index: 2147483647; max-height: 254px; overflow: hidden; overflow-y: auto; box-sizing: border-box;
-  }
-  .wb-autocomplete-suggestion { position: relative; padding: 0 .6em; line-height: 23px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 1.02em; color: #333; }
-  .wb-autocomplete-suggestion b { font-weight: bold; }
-  .wb-autocomplete-suggestion.selected { background: #f0f0f0; }

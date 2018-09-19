@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding, ViewChild, ElementRef } from '@angular/core';
 
 import { User, UserService } from '../../core';
 
@@ -7,6 +7,9 @@ import { User, UserService } from '../../core';
   templateUrl: './header.component.html'
 })
 export class HeaderComponent implements OnInit {
+   navBarOpen: boolean = false;
+   @ViewChild('navBar') navBar: ElementRef;
+
   constructor(
     private userService: UserService
   ) {}
@@ -19,5 +22,14 @@ export class HeaderComponent implements OnInit {
         this.currentUser = userData;
       }
     );
+  }
+
+  onNavbarclick() {
+    if(!this.navBarOpen) {
+      this.navBar.nativeElement.style.display="block";
+    } else {
+      this.navBar.nativeElement.style.display="none";
+    }
+    this.navBarOpen = !this.navBarOpen;
   }
 }

@@ -58,8 +58,7 @@
 
 <div class="jumbotron">
     <div class="container ">
-        <!-- <div *ngIf="nobodyFired"> -->
-        <div>
+        <div *ngIf="nobodyFired">
             <button type="button" class="btn btn-primary staff-button" (click)="fireDeveloper('luke')">Luke</button>
             <button type="button" class="btn btn-primary staff-button" (click)="fireDeveloper('james')">James</button>
             <button type="button" class="btn btn-primary staff-button" (click)="fireDeveloper('martin')">Martin</button>
@@ -93,7 +92,7 @@
 
         <div class="initial initial-text">
             Return to the
-            <a href="">homepage</a>.
+            <a [routerLink]="['/']">homepage</a>.
         </div>
     </div>
 </div>

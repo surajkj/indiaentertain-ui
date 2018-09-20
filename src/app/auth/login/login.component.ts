@@ -3,20 +3,19 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
  
 @Component({
     selector: 'app',
-    templateUrl: 'login.component.html'
+    templateUrl: 'login.component.html',
+    styleUrls: ['./login.component.css']
 })
  
 export class LoginComponent implements OnInit {
     registerForm: FormGroup;
     submitted = false;
- 
+    loading = false;
     constructor(private formBuilder: FormBuilder) { }
  
     ngOnInit() {
         this.registerForm = this.formBuilder.group({
-            firstName: ['', Validators.required],
-            lastName: ['', Validators.required],
-            email: ['', [Validators.required, Validators.email]],
+            username: ['', Validators.required],
             password: ['', [Validators.required, Validators.minLength(6)]]
         });
     }

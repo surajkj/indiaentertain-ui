@@ -3,7 +3,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
  
 @Component({
     selector: 'app',
-    templateUrl: 'register.component.html'
+    templateUrl: 'register.component.html',
+    styleUrls: ['./register.component.css']
 })
  
 export class RegisterComponent implements OnInit {
@@ -14,8 +15,8 @@ export class RegisterComponent implements OnInit {
  
     ngOnInit() {
         this.registerForm = this.formBuilder.group({
-            firstName: ['', Validators.required],
-            lastName: ['', Validators.required],
+            name: ['', Validators.required],
+            username: ['', Validators.required],
             email: ['', [Validators.required, Validators.email]],
             password: ['', [Validators.required, Validators.minLength(6)]]
         });

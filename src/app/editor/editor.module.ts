@@ -6,14 +6,14 @@ import { EditableArticleResolver } from './editable-article-resolver.service';
 import { AuthGuard } from '../core';
 import { SharedModule } from '../shared';
 import { EditorRoutingModule } from './editor-routing.module';
-import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
+import { AngularEditorModule } from '@kolkov/angular-editor';
+import { SafeHtmlPipe } from './safe-html.pipe';
 @NgModule({
   imports: [SharedModule, 
     EditorRoutingModule,
-    FroalaEditorModule.forRoot(), 
-    FroalaViewModule.forRoot()
+    AngularEditorModule
   ],
-  declarations: [EditorComponent],
+  declarations: [EditorComponent, SafeHtmlPipe],
   providers: [EditableArticleResolver]
 })
 export class EditorModule {}

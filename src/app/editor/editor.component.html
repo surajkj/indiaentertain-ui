@@ -16,10 +16,20 @@
               <input class="form-control" formControlName="description" type="text" placeholder="What's this post about?" />
             </fieldset>
 
+
+            <!--Editor -->
             <fieldset class="form-group">
-                <div [froalaEditor] formControlName="body"></div>
+              <angular-editor formControlName="body" [config]="editorConfig"></angular-editor>
             </fieldset>
-            
+
+            <!--Editor Content-->
+            <fieldset class="form-group">
+              <div class="html">
+                  <div [innerHTML]="articleForm.get('body').value | safeHtml"></div>
+              </div>
+            </fieldset>
+
+
             <fieldset class="form-group">
               <input class="form-control" type="text" placeholder="Enter tags" [formControl]="tagField" (keyup.enter)="addTag()" />
 
@@ -42,8 +52,3 @@
     </div>
   </div>
 </div>
-
-
-<!-- <div class="container">
-  <div [froalaEditor]>Hello, Froala!</div>
-</div> -->

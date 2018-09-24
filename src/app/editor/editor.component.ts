@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2  } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { Article, ArticlesService } from '../core';
-
+import { AngularEditorConfig } from '@kolkov/angular-editor';
 @Component({
   selector: 'app-editor-page',
-  templateUrl: './editor.component.html'
+  templateUrl: './editor.component.html',
+  styleUrls: ['./editor.component.css']
 })
 export class EditorComponent implements OnInit {
   article: Article = {} as Article;
@@ -19,7 +20,8 @@ export class EditorComponent implements OnInit {
     private articlesService: ArticlesService,
     private route: ActivatedRoute,
     private router: Router,
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private renderer: Renderer2
   ) {
     // use the FormBuilder to create a form group
     this.articleForm = this.fb.group({
@@ -36,6 +38,7 @@ export class EditorComponent implements OnInit {
   }
 
   ngOnInit() {
+     
     // If there's an article prefetched, load it
     this.route.data.subscribe((data: { article: Article }) => {
       if (data.article) {
@@ -43,6 +46,8 @@ export class EditorComponent implements OnInit {
         this.articleForm.patchValue(data.article);
       }
     });
+
+    this.renderer.removeClass(document.body, 'foregroundColorPicker-');
   }
 
   addTag() {
@@ -80,4 +85,15 @@ export class EditorComponent implements OnInit {
   updateArticle(values: Object) {
     Object.assign(this.article, values);
   }
+
+  editorConfig: AngularEditorConfig = {
+    editable: true,
+    spellcheck: true,
+    height: '15rem',
+    minHeight: '5rem',
+    placeholder: 'Enter text here...',
+    translate: 'no',
+    uploadUrl: 'v1/images', // if needed
+     };
+
 }

@@ -11,3 +11,5 @@
 4) Add js reference in angular.json script array `node_modules/jquery/dist/jquery.min.js`
 
 5) Add css rererence in styles.css `@import "~bootstrap/dist/css/bootstrap.css"`
+
+6) Using Library [AngularEditor](https://github.com/kolkov/angular-editor)

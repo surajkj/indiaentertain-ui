@@ -6,9 +6,13 @@ import { EditableArticleResolver } from './editable-article-resolver.service';
 import { AuthGuard } from '../core';
 import { SharedModule } from '../shared';
 import { EditorRoutingModule } from './editor-routing.module';
-
+import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
 @NgModule({
-  imports: [SharedModule, EditorRoutingModule],
+  imports: [SharedModule, 
+    EditorRoutingModule,
+    FroalaEditorModule.forRoot(), 
+    FroalaViewModule.forRoot()
+  ],
   declarations: [EditorComponent],
   providers: [EditableArticleResolver]
 })

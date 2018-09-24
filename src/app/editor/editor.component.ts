@@ -63,6 +63,7 @@ export class EditorComponent implements OnInit {
   submitForm() {
     this.isSubmitting = true;
 
+    console.log(this.articleForm.value);
     // update the model
     this.updateArticle(this.articleForm.value);
 

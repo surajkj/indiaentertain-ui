@@ -51,13 +51,13 @@
             <img src="assets/img/avatar-2.jpg" class="img-fluid rounded-circle z-depth-0">
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#"><i class="fa fa-clipboard" aria-hidden="true"></i>
+            <a class="dropdown-item" [routerLink]="['/my-articles']"><i class="fa fa-clipboard" aria-hidden="true"></i>
               My Articles</a>
-            <a class="dropdown-item" href="#"><i class="fa fa-bookmark" aria-hidden="true"></i>
+            <a class="dropdown-item" [routerLink]="['/bookmarks']"><i class="fa fa-bookmark" aria-hidden="true"></i>
               Bookmarks</a>
-            <a class="dropdown-item" href="#"><i class="fa fa-user" aria-hidden="true"></i>
+            <a class="dropdown-item" [routerLink]="['/profile']"><i class="fa fa-user" aria-hidden="true"></i>
               Profile</a>
-            <a class="dropdown-item" href="/settings"><i class="fa fa-cog" aria-hidden="true"></i>
+            <a class="dropdown-item" [routerLink]="['/settings']"><i class="fa fa-cog" aria-hidden="true"></i>
               Setting</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>

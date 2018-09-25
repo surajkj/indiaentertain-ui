@@ -12,9 +12,11 @@ import {
 import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { MyArticlesComponent } from './my-articles/my-articles.component';
+import { BookmarksComponent } from './bookmarks/bookmarks.component';
 
 @NgModule({
-  declarations: [AppComponent, FooterComponent, HeaderComponent, NotFoundComponent],
+  declarations: [AppComponent, FooterComponent, HeaderComponent, NotFoundComponent, MyArticlesComponent, BookmarksComponent],
   imports: [
     BrowserModule,
     CoreModule,

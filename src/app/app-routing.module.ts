@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { MyArticlesComponent } from './my-articles/my-articles.component';
+import { BookmarksComponent } from './bookmarks/bookmarks.component';
 
 const routes: Routes = [
   {
@@ -21,6 +23,14 @@ const routes: Routes = [
   },{
     path: 'login',
     loadChildren: './auth/auth.module#AuthModule'
+  },
+  { 
+    path: 'my-articles', 
+    component: MyArticlesComponent 
+  },
+  { 
+    path: 'bookmarks', 
+    component: BookmarksComponent 
   },
   { path: '**', component: NotFoundComponent }
 ];

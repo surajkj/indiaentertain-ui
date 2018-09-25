@@ -6,8 +6,7 @@ import { SettingsComponent } from './settings.component';
 const routes: Routes = [
   {
     path: '',
-    component: SettingsComponent,
-    canActivate: [AuthGuard]
+    component: SettingsComponent
   }
 ];
 

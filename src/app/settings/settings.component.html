@@ -1,68 +1,84 @@
-<div class="settings-page">
-  <div class="container page">
-    <div class="row">
-      <div class="col-md-6 offset-md-3 col-xs-12">
+<!-- main app container -->
 
-        <h1 class="text-xs-center">Your Settings</h1>
+<div class="container">
 
-        <app-list-errors [errors]="errors"></app-list-errors>
-
-        <form [formGroup]="settingsForm" (ngSubmit)="submitForm()">
-          <fieldset [disabled]="isSubmitting">
-
-            <fieldset class="form-group">
-              <input class="form-control"
-                type="text"
-                placeholder="URL of profile picture"
-                formControlName="image" />
-            </fieldset>
-
-            <fieldset class="form-group">
-              <input class="form-control form-control-lg"
-                type="text"
-                placeholder="Username"
-                formControlName="username" />
-            </fieldset>
-
-            <fieldset class="form-group">
-              <textarea class="form-control form-control-lg"
-                rows="8"
-                placeholder="Short bio about you"
-                formControlName="bio">
-              </textarea>
-            </fieldset>
-
-            <fieldset class="form-group">
-              <input class="form-control form-control-lg"
-                type="email"
-                placeholder="Email"
-                formControlName="email" />
-            </fieldset>
-
-            <fieldset class="form-group">
-              <input class="form-control form-control-lg"
-                type="password"
-                placeholder="New Password"
-                formControlName="password" />
-            </fieldset>
-
-            <button class="btn btn-lg btn-primary pull-xs-right"
-              type="submit">
-              Update Settings
-            </button>
-
-          </fieldset>
-        </form>
-
-        <!-- Line break for logout button -->
-        <hr />
-
-        <button class="btn btn-outline-danger"
-          (click)="logout()">
-          Or click here to logout.
-        </button>
-
+  <div class="col-md-6 offset-md-3 text-padding">
+    <h2>Settings</h2>
+    <div>
+      <h4>Email settings</h4>
+      <hr>
+      <div>
+        <p>
+          <b>Your email</b>
+        </p>
+        <div>
+          demo@example.com
+         
+        </div>
+        <br>
       </div>
     </div>
+
+    <div>
+        <h4>Account settings</h4>
+        <hr>
+        <div>
+          <p>
+            <b>Your username </b>
+          </p>
+          <div>
+            https//:example.com/username
+            <button type="button" class="btn btn-secondary float-right">Edit Username</button>
+          </div>
+          <br>
+          <div>
+             Change Password
+          <button type="button" class="btn btn-secondary float-right">Change</button>
+            </div>
+            <br>
+            <div>
+               Manage blocked user
+            <button type="button" class="btn btn-secondary float-right">manage</button>
+              </div>
+
+              <br>
+        </div>
+      </div>
+
+      <div>
+          <h4>Security</h4>
+          <hr>
+          <div>
+              <div>
+                  Sign out from all other sessions
+                  <button type="button" class="btn btn-secondary float-right">Sign out</button>
+                </div>
+           
+            <br>
+          </div>
+
+          <div>
+              <div>
+                  Deactivate account
+
+                  <button type="button" class="btn btn-secondary float-right">Deactivate account
+                    </button>
+                </div>
+           
+            <br>
+          </div>
+
+          <div>
+              <div>
+                  Delete account
+
+                  <button type="button" class="btn btn-secondary float-right">Delete account
+                    </button>
+                </div>
+           
+            <br>
+          </div>
+        </div>
   </div>
+
 </div>

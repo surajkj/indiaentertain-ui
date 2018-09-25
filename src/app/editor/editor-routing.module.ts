@@ -8,16 +8,7 @@ import { SharedModule } from '../shared';
 const routes: Routes = [
   {
     path: '',
-    component: EditorComponent,
-    canActivate: [AuthGuard]
-  },
-  {
-    path: ':slug',
-    component: EditorComponent,
-    canActivate: [AuthGuard],
-    resolve: {
-      article: EditableArticleResolver
-    }
+    component: EditorComponent
   }
 ];
 

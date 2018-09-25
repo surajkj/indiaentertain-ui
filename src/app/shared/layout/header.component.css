@@ -1,0 +1,9 @@
+
+.rounded-circle {
+    border-radius: 50%;
+    height: 35px;
+}
+
+.dropdown-toggle::after {
+    display:none;
+}

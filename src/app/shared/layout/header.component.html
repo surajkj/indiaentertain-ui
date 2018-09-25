@@ -3,35 +3,36 @@
   <div class="container">
     <!-- Begin Logo -->
     <a class="navbar-brand" href="index.html">
-        <img src="assets/img/IndiaEntertainLogo_.png" alt="logo">
-      </a>
-      <!-- End Logo -->
-      <div class="collapse navbar-collapse" #navBar id="navbarsExampleDefault" >
-        <!-- Begin Menu -->
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" [routerLink]="['/']">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/article']">Popular</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/profile']">Random</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" [routerLink]="['/editor']">Write a Post</a>
-          </li>
-         
-          <!-- <li class="nav-item">
+      <img src="assets/img/IndiaEntertainLogo_.png" alt="logo">
+    </a>
+    <!-- End Logo -->
+    <div class="collapse navbar-collapse" #navBar id="navbarsExampleDefault">
+      <!-- Begin Menu -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" [routerLink]="['/']">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/article']">Popular</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/profile']">Random</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/editor']">Write a Post</a>
+        </li>
+
+        <!-- <li class="nav-item">
               <a class="nav-link" [routerLink]="['/profile']"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25">
                   <path d="M20.067 18.933l-4.157-4.157a6 6 0 1 0-.884.884l4.157 4.157a.624.624 0 1 0 .884-.884zM6.5 11c0-2.62 2.13-4.75 4.75-4.75S16 8.38 16 11s-2.13 4.75-4.75 4.75S6.5 13.62 6.5 11z"></path>
                 </svg></a>
           </li> -->
-          
-          <!-- Begin Search -->
-        <form class="form-inline my-2 my-lg-0">
+
+        <!-- Begin Search -->
+        <li class="nav-item">
+          <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search">
             <span class="search-icon">
               <svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25">
@@ -39,22 +40,46 @@
               </svg>
             </span>
           </form>
-          <li class="nav-item">
-            <a class="btn btn-bd-download" [routerLink]="['/login']">Sign In</a>
         </li>
-          <!-- End Search -->
-          
-            <!-- <li class="nav-item">
+        <!-- <li class="nav-item">
+            <a class="btn btn-bd-download" [routerLink]="['/login']">Sign In</a>
+        </li> -->
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle waves-effect waves-light" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="true">
+            <img src="assets/img/avatar-2.jpg" class="img-fluid rounded-circle z-depth-0">
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"><i class="fa fa-clipboard" aria-hidden="true"></i>
+              My Articles</a>
+            <a class="dropdown-item" href="#"><i class="fa fa-bookmark" aria-hidden="true"></i>
+              Bookmarks</a>
+            <a class="dropdown-item" href="#"><i class="fa fa-user" aria-hidden="true"></i>
+              Profile</a>
+            <a class="dropdown-item" href="#"><i class="fa fa-cog" aria-hidden="true"></i>
+              Setting</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>
+              Sign Out</a>
+          </div>
+        </li>
+
+        <!-- End Search -->
+
+        <!-- <li class="nav-item">
                 <a class="btn btn-link" [routerLink]="['/profile']">Sign Up</a>
               </li> -->
-        </ul>
-        
-        <!-- End Menu -->
-        
-      </div>
+
+
+      </ul>
+
+      <!-- End Menu -->
+
+    </div>
   </div>
-  <button (click)="onNavbarclick()" class="navbar-toggler navbar-toggler-right float-sm-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-  aria-controls="navbarsExampleDefault" aria-expanded="true" aria-label="Toggle navigation">
-   <span class="navbar-toggler-icon"></span>
- </button>
+  <button (click)="onNavbarclick()" class="navbar-toggler navbar-toggler-right float-sm-right" type="button" data-toggle="collapse"
+    data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 </nav>
